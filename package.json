@@ -1,0 +1,14 @@
+{
+  "name": "resume-generator",
+  "version": "1.0.0",
+  "description": "Generate ATS-friendly resume PDF from JSON",
+  "main": "generate.js",
+  "scripts": {
+    "generate": "node generate.js"
+  },
+  "dependencies": {
+    "fs-extra": "^11.1.1",
+    "html-pdf-node": "^1.0.8",
+    "pupa": "^3.0.0"
+  }
+}
