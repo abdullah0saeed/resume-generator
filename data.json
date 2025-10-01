@@ -1,0 +1,158 @@
+{
+  "name": "Abdullah Saeed Khodari",
+  "title": "Software Engineer | MERN Stack Developer",
+  "contact": {
+    "email": "abdullah0saeed.dev@gmail.com",
+    "phone": "+2 01100302722",
+    "location": "Cairo, Egypt",
+    "linkedin": "http://www.linkedin.com/in/abdullah-saeed-93b508203",
+    "website": ""
+  },
+  "summary": "Passionate and detail-oriented MERN Stack Developer with strong experience building scalable web and mobile applications using React.js, Next.js, React Native (Expo), Node.js and MongoDB. I focus on clean, maintainable code and fast user experiences, and enjoy working on collaborative teams to deliver impactful solutions.",
+  "education": [
+    {
+      "school": "Zagazig University",
+      "degree": "Bachelor's in Computer and Systems Engineering",
+      "dates": "Jun 2018 – Jun 2023",
+      "details": "Grade: Very good. Graduation project: Game-based learning mobile app (Grade: Excellent)."
+    }
+  ],
+  "skills": [
+    "HTML",
+    "CSS",
+    "Bootstrap",
+    "Tailwind CSS",
+    "GluestackUI",
+    "JavaScript",
+    "TypeScript",
+    "jQuery",
+    "React.js",
+    "Next.js",
+    "Shadcn UI",
+    "React Native (Expo)",
+    "Redux Toolkit",
+    "Zustand",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "MySQL",
+    "Prisma",
+    "Mongoose",
+    "JSON",
+    "Git",
+    "Docker",
+    "AWS S3",
+    "Cloudinary"
+  ],
+  "tools": [
+    "VS Code",
+    "MongoDB Compass",
+    "Postman",
+    "Netlify",
+    "Vercel",
+    "Render"
+  ],
+  "projects": [
+    {
+      "name": "Trego",
+      "dates": "Sep 2025",
+      "bullets": [
+        "A modern and fully-featured eCommerce web application built with Next.js, TypeScript, shadcn, and lucide.",
+        "Bilingual interface (Arabic and English) with a fully responsive design across all devices.",
+        "Store system: product listings with high-quality images, advanced multilingual search, smart shopping cart with quantity management, and detailed product pages.",
+        "Integrated payment system: supports Kashier gateway, secure credit card payments, and cash-on-delivery option.",
+        "Advanced order management: real-time order tracking, automatic notifications, and inventory management.",
+        "Admin dashboard: manage products and categories, approve and control listings, track orders, and update order statuses."
+      ],
+      "links": ["https://trego-commerce.vercel.app"]
+    },
+    {
+      "name": "WingoLand",
+      "dates": "Nov 2024 - Present",
+      "bullets": [
+        "Full-stack, game-based learning platform for teaching English through interactive levels.",
+        "Web app built with Next.js and Tailwind CSS.",
+        "Cross platform Mobile app built with React Native (Expo).",
+        "Backend: Node.js, Express, MongoDB; AWS S3 for assets.",
+        "Deployed on Vercel, Render, and both Android and iOS app stores.",
+        "Tap payments gateway, and Tabby for split payments integration.",
+        "Apple In-App Purchases integration."
+      ],
+      "links": [
+        "https://wingoland.com",
+        "https://play.google.com/store/apps/details?id=com.wingoLand.wingoLand",
+        "https://apps.apple.com/sa/app/wingoland/id6744946462"
+      ]
+    },
+    {
+      "name": "Kafka Event Handler – Node.js Microservice",
+      "dates": "April 2025",
+      "bullets": [
+        "Microservice handling real-time event streaming with Apache Kafka.",
+        "Implemented producers/consumers.",
+        "Built with Node.js, Express.js, Apache Kafka, MongoDB, Docker."
+      ],
+      "links": ["https://github.com/abdullah0saeed/kafka-microservice-logs"]
+    },
+    {
+      "name": "RentEase",
+      "dates": "Feb 2025",
+      "bullets": [
+        "Full-stack Web app for property listing and booking; notifications via automated WhatsApp messages.",
+        "Admin test credentials: admin / 123456"
+      ],
+      "links": ["https://rental-app-front-steel.vercel.app/"]
+    },
+    {
+      "name": "EduBase",
+      "dates": "Aug 2024",
+      "bullets": [
+        "Full-stack Course purchasing platform with admin management.",
+        "Built with React.js, Node.js, Express.js, MongoDB.",
+        "Paymob payment gateway integration.",
+        "Admin test credentials: admin@gmail.com / 123456"
+      ],
+      "links": ["https://edubase.netlify.app/"]
+    },
+    {
+      "name": "Game-based learning mobile app",
+      "dates": "May 2023",
+      "bullets": [
+        "Game-based learning cross-platform mobile app for kids.",
+        "The app consists of a landing page in the form of game map of levels each leads to a different game based on the data fetched from the backend.",
+        "The content of the game is dynamic and is fetched from the backend then organized depending on the game view.",
+        "Built with React Native (Expo), Node.js, Express.js, MongoDB."
+      ],
+      "links": [
+        "https://drive.google.com/drive/folders/11vhDl-5g6oBPAVnGaHy9-9A0UBGikr4I"
+      ]
+    },
+    {
+      "name": "Quizzz",
+      "dates": "Jul 2022",
+      "bullets": [
+        "Full-stack Quiz app for making, editing, and taking quizzes, and comparing answers with correct ones.",
+        "Built with React.js, Node.js, Express.js, MongoDB."
+      ],
+      "links": ["https://quiz0maker.netlify.app/"]
+    },
+    {
+      "name": "College registration system",
+      "dates": "Feb 2022",
+      "bullets": [
+        "Full-stack College registration system.",
+        "For adding and registering courses, submitting, editing, and showing grades, and more.",
+        "Built with React.js, Node.js, Express.js, MongoDB.",
+        "Admin test credentials: code: 1234 / password: 123456"
+      ],
+      "links": ["https://registration-system.netlify.app/"]
+    }
+  ],
+  "languages": ["Arabic (Native)", "English (Very good)"],
+  "soft_skills": [
+    "Communication",
+    "Time Management",
+    "Teamwork",
+    "Problem Solving"
+  ]
+}
