@@ -165,6 +165,11 @@ function buildHtml(data) {
       <div>
         <a href="${data.contact.linkedin}">LinkedIn</a>
         ${
+          data.contact.github
+            ? ' • <a href="' + data.contact.github + '">GitHub</a>'
+            : ""
+        }
+        ${
           data.contact.website
             ? ' • <a href="' + data.contact.website + '">Website</a>'
             : ""
@@ -271,6 +276,9 @@ async function generatePdf(html) {
   try {
     const data = await loadData();
     const html = buildHtml(data);
+    // delete before generating a new one if exists
+    if (fs.existsSync(OUTPUT_PDF)) await fs.unlink(OUTPUT_PDF);
+    // generate
     await generatePdf(html);
     console.log("✅ Enhanced Resume PDF generated at", OUTPUT_PDF);
   } catch (err) {

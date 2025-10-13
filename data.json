@@ -1,11 +1,12 @@
 {
   "name": "Abdullah Saeed Khodari",
-  "title": "Software Engineer | MERN Stack Developer",
+  "title": "MERN Stack Developer | React Native",
   "contact": {
     "email": "abdullah0saeed.dev@gmail.com",
     "phone": "+2 01100302722",
     "location": "Cairo, Egypt",
     "linkedin": "http://www.linkedin.com/in/abdullah-saeed-93b508203",
+    "github": "https://github.com/abdullah0saeed?tab=repositories",
     "website": ""
   },
   "summary": "Passionate and detail-oriented MERN Stack Developer with strong experience building scalable web and mobile applications using React.js, Next.js, React Native (Expo), Node.js and MongoDB. I focus on clean, maintainable code and fast user experiences, and enjoy working on collaborative teams to deliver impactful solutions.",
@@ -53,6 +54,23 @@
     "Render"
   ],
   "projects": [
+    {
+      "name": "QR Generator Authentication System",
+      "dates": "Oct 2025",
+      "bullets": [
+        "Full-stack authentication system with QR code management using Node.js, Express, and React Native",
+        "JWT-based authentication with 10-minute token expiration for enhanced security",
+        "Password reset functionality with Nodemailer integration for email notifications",
+        "MongoDB database with Prisma ORM for efficient data management",
+        "React Native mobile app with Expo for cross-platform QR code generation",
+        "Input validation using Zod schema validation library",
+        "Secure password hashing with bcrypt and real-time features with Socket.io"
+      ],
+      "links": [
+        "https://github.com/abdullah0saeed/qr-auth-backend",
+        "https://github.com/abdullah0saeed/qr-auth-mobile"
+      ]
+    },
     {
       "name": "Trego",
       "dates": "Sep 2025",
