@@ -1,6 +1,6 @@
 {
   "name": "Abdullah Saeed Khodari",
-  "title": "MERN Stack Developer | React Native",
+  "title": "Full Stack Developer",
   "contact": {
     "email": "abdullah0saeed.dev@gmail.com",
     "phone": "+2 01100302722",
@@ -9,7 +9,7 @@
     "github": "https://github.com/abdullah0saeed?tab=repositories",
     "website": ""
   },
-  "summary": "Passionate and detail-oriented MERN Stack Developer with strong experience building scalable web and mobile applications using React.js, Next.js, React Native (Expo), Node.js and MongoDB. I focus on clean, maintainable code and fast user experiences, and enjoy working on collaborative teams to deliver impactful solutions.",
+  "summary": "Passionate and detail-oriented Full Stack Developer with strong experience building scalable web and mobile applications using React.js, Next.js, React Native (Expo), Node.js and MongoDB. I focus on clean, maintainable code and fast user experiences, and enjoy working on collaborative teams to deliver impactful solutions.",
   "education": [
     {
       "school": "Zagazig University",
@@ -19,31 +19,31 @@
     }
   ],
   "skills": [
-    "HTML",
-    "CSS",
-    "Bootstrap",
-    "Tailwind CSS",
-    "GluestackUI",
     "JavaScript",
     "TypeScript",
-    "jQuery",
     "React.js",
     "Next.js",
-    "Shadcn UI",
     "React Native (Expo)",
     "Redux Toolkit",
     "Zustand",
     "Node.js",
     "Express.js",
-    "MongoDB",
-    "MySQL",
+    "Docker",
     "Prisma",
     "Mongoose",
-    "JSON",
-    "Git",
-    "Docker",
+    "MongoDB",
+    "MySQL",
     "AWS S3",
-    "Cloudinary"
+    "Cloudinary",
+    "Git",
+    "jQuery",
+    "Bootstrap",
+    "Tailwind CSS",
+    "Shadcn UI",
+    "GluestackUI",
+    "JSON",
+    "CSS",
+    "HTML"
   ],
   "tools": [
     "VS Code",

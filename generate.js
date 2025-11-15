@@ -186,7 +186,9 @@ function buildHtml(data) {
   <section>
     <h2>Skills & Tools</h2>
     <div class="skills">
-      ${data.skills.map((s) => `<span class="skill-pill">${s}</span>`).join("")}
+      <ul style="list-style:none; padding:0; margin:0; display:flex; flex-wrap:wrap; gap:6px">
+        ${data.skills.map((s) => `<li class="skill-pill">${s}</li>`).join("")}
+      </ul>
     </div>
     <div style="margin-top:6px" class="muted">Tools: ${data.tools.join(
       " • "
