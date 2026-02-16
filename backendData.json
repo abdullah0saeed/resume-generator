@@ -1,0 +1,107 @@
+{
+  "name": "Abdullah Saeed Khodari",
+  "title": "Backend Engineer",
+  "contact": {
+    "email": "abdullah0saeed.dev@gmail.com",
+    "phone": "+2 01100302722",
+    "location": "Cairo, Egypt",
+    "linkedin": "http://www.linkedin.com/in/abdullah-saeed-93b508203",
+    "github": "https://github.com/abdullah0saeed?tab=repositories",
+    "website": ""
+  },
+  "summary": "Backend Engineer with extensive experience designing scalable microservices and RESTful APIs using Node.js, Express, and TypeScript. Proficient in database optimization with PostgreSQL, MySQL, and MongoDB. Adept at integrating complex third-party services (Stripe, Fawry, OpenAI) and deploying containerized applications using Docker and AWS.",
+  "military_status": "Completed",
+  "skills": [
+    "Node.js",
+    "Express.js",
+    "TypeScript",
+    "PostgreSQL",
+    "MySQL",
+    "MongoDB",
+    "Apache Kafka",
+    "Docker",
+    "AWS S3",
+    "Supabase",
+    "Prisma",
+    "Drizzle ORM",
+    "Mongoose",
+    "Git",
+    "CI/CD"
+  ],
+  "tools": [
+    "VS Code",
+    "Postman",
+    "Docker Desktop",
+    "MongoDB Compass",
+    "Render",
+    "Vercel"
+  ],
+  "experience": [
+    {
+      "company": "OrderKing Egypt",
+      "role": "Backend Engineer",
+      "dates": "Nov 2025 - Present",
+      "bullets": [
+        "Architected scalable RESTful APIs using Node.js and TypeScript, serving thousands of concurrent users.",
+        "Designed normalized database schemas in PostgreSQL and MySQL, optimizing complex queries for 40% faster response times.",
+        "Implemented a robust notification service using Firebase FCM and APNs, handling high-throughput delivery queues.",
+        "Integrated secure payment gateways (Stripe, Fawry) and SMS providers, ensuring PCI compliance and transactional integrity.",
+        "Built AI-driven backend features by integrating OpenAI API for automated content processing and user assistance."
+      ],
+      "links": []
+    },
+    {
+      "company": "WingoLand",
+      "role": "Backend Developer (Freelance)",
+      "dates": "Nov 2024 - Oct 2025",
+      "bullets": [
+        "Developed a monolithic Node.js backend to manage user progress, game levels, and real-time leaderboards.",
+        "Optimized MongoDB aggregations to handle complex data retrieval for game analytics.",
+        "Implemented secure file storage for game assets using AWS S3 and presigned URLs.",
+        "Integrated Apple In-App Purchases and Tap Payments for secure subscription management."
+      ],
+      "links": ["https://wingoland.com"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Kafka Event Handler – Microservice",
+      "dates": "April 2025",
+      "bullets": [
+        "Built a fault-tolerant event streaming service using Apache Kafka and Node.js.",
+        "Implemented producer/consumer patterns to decouple services and ensure data consistency.",
+        "Containerized the entire stack using Docker for consistent local and production environments."
+      ],
+      "links": ["https://github.com/abdullah0saeed/kafka-microservice-logs"]
+    },
+    {
+      "name": "QR Auth System",
+      "dates": "Oct 2025",
+      "bullets": [
+        "Developed a secure authentication backend using JWT and bcrypt.",
+        "Implemented real-time socket connections for instant QR code validation.",
+        "Designed a schema-driven API using Zod for strict input validation."
+      ],
+      "links": ["https://github.com/abdullah0saeed/qr-auth-backend"]
+    },
+    {
+      "name": "EduBase API",
+      "dates": "Aug 2024",
+      "bullets": [
+        "Engineered a course management API with role-based access control (RBAC).",
+        "Integrated Paymob payment gateway and automated email receipts using Nodemailer."
+      ],
+      "links": ["https://edubase.netlify.app/"]
+    }
+  ],
+  "education": [
+    {
+      "school": "Zagazig University",
+      "degree": "Bachelor's in Computer and Systems Engineering",
+      "dates": "Jun 2018 – Jun 2023",
+      "details": "Grade: Very good. Graduation project: Backend for Game-based learning platform."
+    }
+  ],
+  "languages": ["Arabic (Native)", "English (Very good)"],
+  "soft_skills": ["System Design", "Problem Solving", "Code Review"]
+}
