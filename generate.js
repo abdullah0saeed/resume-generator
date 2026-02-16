@@ -8,256 +8,211 @@ let OUTPUT_PDF;
 async function loadData() {
   const raw = await fs.readFile(DATA_FILE, "utf8");
   const data = JSON.parse(raw);
-
   OUTPUT_PDF = path.resolve(__dirname, `${data.name}.pdf`);
-
   return data;
 }
 
 function buildHtml(data) {
   return `
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<title>${data.name} — Resume</title>
+<title>${data.name} - Resume</title>
 <style>
-  /* ==== Base Styling ==== */
-  :root {
-  --primary: #0d47a1;
-  --text: #1a1a1a;
-  --muted: #444;
-  --bg-light: #eef2f7;
-  --pill-bg: #dce4f7;
-  }
+  /* ==== ATS Safe Styling ==== */
   body {
-    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 11pt;
-    color: var(--text);
+    color: #000000;
     margin: 0;
-    padding: 32px 40px;
-    line-height: 1.45;
+    padding: 30px;
+    line-height: 1.5;
     background: white;
   }
-  header {
-    border-bottom: 2px solid var(--primary);
-    padding-bottom: 12px;
-    margin-bottom: 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+  
+  h1 {
+    font-size: 24pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 5px 0;
   }
-  .name {
-    font-size: 22pt;
-    font-weight: 700;
-    color: var(--primary);
+  
+  .job-title {
+    font-size: 14pt;
+    text-align: center;
+    margin-bottom: 10px;
   }
-  .title {
-    font-size: 11pt;
-    color: var(--muted);
-    margin-top: 4px;
-  }
-  .contact {
-    font-size: 9.5pt;
-    color: var(--muted);
-    text-align: right;
-  }
-  .contact a { color: var(--primary); text-decoration: none; }
 
-  /* ==== Sections ==== */
-  section { margin-bottom: 18px; }
   h2 {
     font-size: 12pt;
-    color: var(--primary);
-    margin: 12px 0 6px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000;
+    margin: 18px 0 10px 0;
+    padding-bottom: 3px;
   }
-  p { margin: 6px 0; }
 
-  /* ==== Skills ==== */
-  .skills { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
-  .skill-pill {
-    background: var(--pill-bg);
-    padding: 4px 10px;
-    border-radius: 12px;
-    font-size: 9pt;
-    color: var(--primary);
-  }
-  .muted { color: var(--muted); font-size: 9.5pt; }
-
-  /* ==== Projects ==== */
-  .project {
-    margin-bottom: 12px;
-    padding: 8px 10px;
-    background: var(--bg-light);
-    border-left: 3px solid var(--primary);
-    border-radius: 6px;
-  }
-  .project-title {
-    font-weight: 600;
-    font-size: 11pt;
-    margin-bottom: 4px;
-  }
-  .project-links {
-  margin-top: 6px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-.project-link {
-  font-size: 9pt;
-  color: #0b4be0;
-  text-decoration: underline;
-  word-break: break-all;
-}
-.project-link-label {
-  font-weight: 500;
-  font-size: 9pt;
-  margin-right: 6px;
-  color: #333;
-}
-  ul { margin: 6px 0 6px 20px; }
-  li { margin-bottom: 4px; }
-
-  /* ==== Education ==== */
-  .edu { margin-bottom: 8px; }
-  .edu .school { font-weight: 600; font-size: 11pt; }
-  .edu .degree { font-size: 9.5pt; color: var(--muted); }
-  .education-entry {
-  margin-bottom: 10px;
-}
-.education-header {
-  display: flex;
-  justify-content: space-between;
-  font-weight: 600;
-}
-.education-degree {
-  color: #0b4be0;
-}
-.education-details {
-  font-size: 9.5pt;
-  color: #555;
-  margin-top: 3px;
-}
-
-
-  /* ==== Footer ==== */
-  footer {
-    border-top: 1px solid #ddd;
-    padding-top: 8px;
+  /* Contact Info */
+  .contact-info {
     text-align: center;
-    font-size: 8.5pt;
-    color: var(--muted);
-    margin-top: 16px;
+    font-size: 10pt;
+    margin-bottom: 20px;
   }
+  .contact-separator { margin: 0 5px; }
+  a { color: #000000; text-decoration: none; }
+  
+  /* Sections */
+  .entry { margin-bottom: 12px; page-break-inside: avoid; }
+  .entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-weight: bold;
+  }
+  .entry-title { font-size: 11pt; }
+  .entry-role { font-style: italic; font-weight: normal; }
+  .entry-date { font-size: 10pt; min-width: 100px; text-align: right; }
+
+  ul { margin: 5px 0 5px 18px; padding: 0; }
+  li { margin-bottom: 3px; }
+  
+  .links { font-size: 9pt; margin-top: 4px; }
+  .links a { text-decoration: underline; }
 </style>
 </head>
 <body>
+
   <header>
-    <div>
-      <div class="name">${data.name}</div>
-      <div class="title">${data.title || ""}</div>
-    </div>
-    <div class="contact">
-      <div>${data.contact.email} • ${data.contact.phone}</div>
-      <div>${data.contact.location}</div>
-      <div>
-        <a href="${data.contact.linkedin}">LinkedIn</a>
-        ${
-          data.contact.github
-            ? ' • <a href="' + data.contact.github + '">GitHub</a>'
-            : ""
-        }
-        ${
-          data.contact.website
-            ? ' • <a href="' + data.contact.website + '">Website</a>'
-            : ""
-        }
-      </div>
+    <h1>${data.name}</h1>
+    <div class="job-title">${data.title}</div>
+    <div class="contact-info">
+      ${data.contact.location}
+      <span class="contact-separator">|</span>
+      ${data.contact.phone}
+      <span class="contact-separator">|</span>
+      <a href="mailto:${data.contact.email}">${data.contact.email}</a>
+      <br>
+      ${
+        data.military_status
+          ? `<span>Military Status: ${data.military_status}</span><br>`
+          : ""
+      }
+      <a href="${data.contact.linkedin}">LinkedIn</a>
+      ${
+        data.contact.github
+          ? ` <span class="contact-separator">|</span> <a href="${data.contact.github}">GitHub</a>`
+          : ""
+      }
+      ${
+        data.contact.website
+          ? ` <span class="contact-separator">|</span> <a href="${data.contact.website}">Portfolio</a>`
+          : ""
+      }
     </div>
   </header>
 
   <section>
-    <h2>Summary</h2>
+    <h2>Professional Summary</h2>
     <p>${data.summary}</p>
   </section>
 
   <section>
-    <h2>Skills & Tools</h2>
-    <div class="skills">
-      <ul style="list-style:none; padding:0; margin:0; display:flex; flex-wrap:wrap; gap:6px">
-        ${data.skills.map((s) => `<li class="skill-pill">${s}</li>`).join("")}
-      </ul>
-    </div>
-    <div style="margin-top:6px" class="muted">Tools: ${data.tools.join(
-      " • "
+    <h2>Technical Skills</h2>
+    <div><strong>Languages & Frameworks:</strong> ${data.skills.join(
+      ", "
+    )}</div>
+    <div style="margin-top:5px"><strong>Tools:</strong> ${data.tools.join(
+      ", "
     )}</div>
   </section>
+
+  ${
+    data.experience && data.experience.length
+      ? `
+  <section>
+    <h2>Professional Experience</h2>
+    ${data.experience
+      .map(
+        (exp) => `
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">${exp.company} <span class="entry-role">- ${
+          exp.role
+        }</span></div>
+          <div class="entry-date">${exp.dates}</div>
+        </div>
+        <ul>${exp.bullets.map((b) => `<li>${b}</li>`).join("")}</ul>
+        ${
+          exp.links && exp.links.length
+            ? `
+          <div class="links"><strong>Links:</strong> ${exp.links
+            .map((l) => `<a href="${l}">${l}</a>`)
+            .join(" | ")}</div>
+        `
+            : ""
+        }
+      </div>
+    `
+      )
+      .join("")}
+  </section>
+  `
+      : ""
+  }
 
   <section>
     <h2>Projects</h2>
     ${data.projects
       .map(
         (proj) => `
-      <div class="project">
-        <div class="project-title">${proj.name} <span class="muted">— ${
-          proj.dates || ""
-        }</span></div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">${proj.name}</div>
+          <div class="entry-date">${proj.dates || ""}</div>
+        </div>
         <ul>${proj.bullets.map((b) => `<li>${b}</li>`).join("")}</ul>
-       ${
-         proj.links?.length
-           ? `
-  <div class="project-links">
-    ${proj.links
-      .map((l) => {
-        let label = "Link";
-        if (l.includes("play.google.com")) label = "Google Play";
-        else if (l.includes("apps.apple.com")) label = "App Store";
-        else if (l.includes("github.com")) label = "GitHub";
-        else if (l.includes("vercel.app")) label = "Demo";
-        else if (l.includes("netlify.app")) label = "Demo";
-        else if (l.includes("drive.google.com")) label = "Video";
-        else label = "Website";
-        return `<div><span class="project-link-label">${label}:</span> <a class="project-link" href="${l}" target="_blank">${l}</a></div>`;
-      })
-      .join("")}
-  </div>`
-           : ""
-       }
+        ${
+          proj.links && proj.links.length
+            ? `
+          <div class="links"><strong>Links:</strong> ${proj.links
+            .map((l) => `<a href="${l}">${l}</a>`)
+            .join(" | ")}</div>
+        `
+            : ""
+        }
       </div>
     `
       )
       .join("")}
   </section>
 
- <section>
-  <h2>Education</h2>
-  ${data.education
-    .map(
-      (ed) => `
-    <div class="education-entry">
-      <div class="education-header">
-        <div>
-          <span class="education-degree">${ed.degree}</span> — ${ed.school}
-        </div>
-        <div class="muted">${ed.dates || ""}</div>
-      </div>
-      <div class="education-details">${ed.details || ""}</div>
-    </div>
-  `
-    )
-    .join("\n")}
-</section>
-
   <section>
-    <h2>Languages & Soft Skills</h2>
-    <div><strong>Languages:</strong> ${data.languages.join(", ")}</div>
-    <div style="margin-top:4px"><strong>Soft:</strong> ${data.soft_skills.join(
-      " • "
-    )}</div>
+    <h2>Education</h2>
+    ${data.education
+      .map(
+        (ed) => `
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">${ed.school}</div>
+          <div class="entry-date">${ed.dates}</div>
+        </div>
+        <div><strong>${ed.degree}</strong></div>
+        <div>${ed.details}</div>
+      </div>
+    `
+      )
+      .join("")}
   </section>
 
+  <section>
+    <h2>Additional Information</h2>
+    <div><strong>Languages:</strong> ${data.languages.join(", ")}</div>
+    <div style="margin-top: 5px;"><strong>Soft Skills:</strong> ${data.soft_skills.join(
+      ", "
+    )}</div>
+  </section>
 
 </body>
 </html>
@@ -268,7 +223,8 @@ async function generatePdf(html) {
   let file = { content: html };
   let options = {
     format: "A4",
-    margin: { top: "12mm", bottom: "12mm", left: "12mm", right: "12mm" },
+    margin: { top: "20mm", bottom: "20mm", left: "20mm", right: "20mm" },
+    printBackground: true,
   };
   const buffer = await pdf.generatePdf(file, options);
   await fs.writeFile(OUTPUT_PDF, buffer);
@@ -278,11 +234,15 @@ async function generatePdf(html) {
   try {
     const data = await loadData();
     const html = buildHtml(data);
-    // delete before generating a new one if exists
-    if (fs.existsSync(OUTPUT_PDF)) await fs.unlink(OUTPUT_PDF);
-    // generate
+
+    // Check if file exists and delete it
+    if (fs.existsSync(OUTPUT_PDF)) {
+      await fs.unlink(OUTPUT_PDF);
+      console.log(`🗑️ Deleted existing file: ${OUTPUT_PDF}`);
+    }
+
     await generatePdf(html);
-    console.log("✅ Enhanced Resume PDF generated at", OUTPUT_PDF);
+    console.log("✅ ATS-Optimized Resume PDF generated at:", OUTPUT_PDF);
   } catch (err) {
     console.error("❌ Error:", err);
   }

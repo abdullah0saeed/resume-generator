@@ -10,14 +10,7 @@
     "website": ""
   },
   "summary": "Passionate and detail-oriented Full Stack Developer with strong experience building scalable web and mobile applications using React.js, Next.js, React Native (Expo), Node.js and MongoDB. I focus on clean, maintainable code and fast user experiences, and enjoy working on collaborative teams to deliver impactful solutions.",
-  "education": [
-    {
-      "school": "Zagazig University",
-      "degree": "Bachelor's in Computer and Systems Engineering",
-      "dates": "Jun 2018 – Jun 2023",
-      "details": "Grade: Very good. Graduation project: Game-based learning mobile app (Grade: Excellent)."
-    }
-  ],
+  "military_status": "Completed",
   "skills": [
     "JavaScript",
     "TypeScript",
@@ -30,9 +23,12 @@
     "Express.js",
     "Docker",
     "Prisma",
+    "Drizzle ORM",
+    "Supabase",
     "Mongoose",
     "MongoDB",
     "MySQL",
+    "PostgreSQL",
     "AWS S3",
     "Cloudinary",
     "Git",
@@ -52,6 +48,53 @@
     "Netlify",
     "Vercel",
     "Render"
+  ],
+  "experience": [
+    {
+      "company": "OrderKing Egypt",
+      "role": "Full Stack Developer",
+      "dates": "Nov 2025 - Present",
+      "bullets": [
+        "Architected and maintained scalable full-stack web applications using React.js, Tailwind CSS, and Node.js.",
+        "Designed and optimized relational database schemas in MySQL and PostgreSQL (via Supabase) using Drizzle ORM for high-performance data storage.",
+        "Integrated multi-provider payment systems (Stripe, Fawry) and SMS services, ensuring secure and reliable transaction processing.",
+        "Engineered a robust push notification infrastructure for Android (Firebase FCM) and iOS (APNs) to drive user engagement.",
+        "Implemented AI-powered features by integrating OpenAI API, enhancing application intelligence and automation capabilities."
+      ],
+      "links": []
+    },
+    {
+      "company": "Home Service App",
+      "role": "Front End Developer (Freelance)",
+      "dates": "Nov 2025 - Dec 2025",
+      "bullets": [
+        "Developed the frontend for a home service booking mobile application using React Native (Expo) and Tailwind CSS.",
+        "Translated Figma designs into high-quality, pixel-perfect, and responsive UI components.",
+        "Integrated service booking flows, user profiles, and real-time status updates."
+      ],
+      "links": [
+        "https://www.figma.com/design/qTS7f5nlvWEgFecdS0E2ZW/Home-Service-App?node-id=0-1&p=f"
+      ]
+    },
+    {
+      "company": "WingoLand",
+      "role": "Full Stack Developer (Freelance)",
+      "dates": "Nov 2024 - Oct 2025",
+      "bullets": [
+        "Full-stack, game-based learning platform for teaching English through interactive levels.",
+        "Web app built with Next.js and Tailwind CSS.",
+        "Cross platform Mobile app built with React Native (Expo).",
+        "Backend: Node.js, Express, MongoDB; AWS S3 for assets.",
+        "Deployed on Vercel, Render, and both Android and iOS app stores.",
+        "Tap payments gateway, and Tabby for split payments integration.",
+        "Apple In-App Purchases integration."
+      ],
+      "links": [
+        "https://wingoland.com",
+        "https://play.google.com/store/apps/details?id=com.wingoLand.wingoLand",
+        "https://apps.apple.com/sa/app/wingoland/id6744946462"
+      ]
+    }
   ],
   "projects": [
     {
@@ -83,24 +126,6 @@
         "Admin dashboard: manage products and categories, approve and control listings, track orders, and update order statuses."
       ],
       "links": ["https://trego-commerce.vercel.app"]
-    },
-    {
-      "name": "WingoLand",
-      "dates": "Nov 2024 - Present",
-      "bullets": [
-        "Full-stack, game-based learning platform for teaching English through interactive levels.",
-        "Web app built with Next.js and Tailwind CSS.",
-        "Cross platform Mobile app built with React Native (Expo).",
-        "Backend: Node.js, Express, MongoDB; AWS S3 for assets.",
-        "Deployed on Vercel, Render, and both Android and iOS app stores.",
-        "Tap payments gateway, and Tabby for split payments integration.",
-        "Apple In-App Purchases integration."
-      ],
-      "links": [
-        "https://wingoland.com",
-        "https://play.google.com/store/apps/details?id=com.wingoLand.wingoLand",
-        "https://apps.apple.com/sa/app/wingoland/id6744946462"
-      ]
     },
     {
       "name": "Kafka Event Handler – Node.js Microservice",
@@ -164,6 +189,14 @@
         "Admin test credentials: code: 1234 / password: 123456"
       ],
       "links": ["https://registration-system.netlify.app/"]
+    }
+  ],
+  "education": [
+    {
+      "school": "Zagazig University",
+      "degree": "Bachelor's in Computer and Systems Engineering",
+      "dates": "Jun 2018 – Jun 2023",
+      "details": "Grade: Very good. Graduation project: Game-based learning mobile app (Grade: Excellent)."
     }
   ],
   "languages": ["Arabic (Native)", "English (Very good)"],
