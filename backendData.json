@@ -42,7 +42,7 @@
       "role": "Backend Engineer",
       "dates": "Nov 2025 - Present",
       "bullets": [
-        "Architected scalable RESTful APIs using Node.js and TypeScript, serving thousands of concurrent users.",
+        "Architected scalable RESTful APIs using Node.js, serving thousands of concurrent users.",
         "Designed normalized database schemas in PostgreSQL and MySQL, optimizing complex queries for 40% faster response times.",
         "Implemented a robust notification service using Firebase FCM and APNs, handling high-throughput delivery queues.",
         "Integrated secure payment gateways (Stripe, Fawry) and SMS providers, ensuring PCI compliance and transactional integrity.",
