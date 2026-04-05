@@ -193,6 +193,12 @@
   ],
   "education": [
     {
+      "school": "Information Technology Institute (ITI)",
+      "degree": "Intensive Training Program - MEARN Stack",
+      "dates": "July 2025 – Nov 2025",
+      "details": "Intensive hands-on training focusing on building full-stack applications using MongoDB, Express.js, React.js, Angular, and Node.js."
+    },
+    {
       "school": "Zagazig University",
       "degree": "Bachelor's in Computer and Systems Engineering",
       "dates": "Jun 2018 – Jun 2023",

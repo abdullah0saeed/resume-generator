@@ -1,0 +1,141 @@
+{
+  "name": "Abdullah Saeed Khodari",
+  "title": "Frontend Engineer",
+  "contact": {
+    "email": "abdullah0saeed.dev@gmail.com",
+    "phone": "+2 01100302722",
+    "location": "Cairo, Egypt",
+    "linkedin": "http://www.linkedin.com/in/abdullah-saeed-93b508203",
+    "github": "https://github.com/abdullah0saeed?tab=repositories",
+    "website": ""
+  },
+  "summary": "Passionate and detail-oriented Frontend Engineer specializing in building highly responsive, scalable, and accessible web and mobile applications. Expert in React.js, Next.js, and React Native (Expo) with a strong foundation in modern styling frameworks like Tailwind CSS. Adept at translating complex Figma designs into pixel-perfect UIs and collaborating with cross-functional teams to deliver seamless user experiences.",
+  "military_status": "Completed",
+  "skills": [
+    "JavaScript",
+    "TypeScript",
+    "React.js",
+    "Next.js",
+    "React Native (Expo)",
+    "Redux Toolkit",
+    "Zustand",
+    "HTML5",
+    "CSS3",
+    "Tailwind CSS",
+    "Shadcn UI",
+    "GluestackUI",
+    "Bootstrap",
+    "jQuery",
+    "Git",
+    "RESTful APIs",
+    "Node.js"
+  ],
+  "tools": ["VS Code", "Figma", "Postman", "Vercel", "Netlify", "Render"],
+  "experience": [
+    {
+      "company": "OrderKing Egypt",
+      "role": "Full Stack Developer",
+      "dates": "Nov 2025 - Present",
+      "bullets": [
+        "Architected and maintained scalable full-stack web applications using React.js, Tailwind CSS, and Node.js.",
+        "Designed and optimized relational database schemas in MySQL and PostgreSQL (via Supabase) using Drizzle ORM for high-performance data storage.",
+        "Integrated multi-provider payment systems (Stripe, Fawry) and SMS services, ensuring secure and reliable transaction processing.",
+        "Engineered a robust push notification infrastructure for Android (Firebase FCM) and iOS (APNs) to drive user engagement.",
+        "Implemented AI-powered features by integrating OpenAI API, enhancing application intelligence and automation capabilities."
+      ],
+      "links": []
+    },
+    {
+      "company": "Home Service App",
+      "role": "Front End Developer (Freelance)",
+      "dates": "Nov 2025 - Dec 2025",
+      "bullets": [
+        "Developed the frontend for a home service booking mobile application using React Native (Expo) and Tailwind CSS.",
+        "Translated Figma designs into high-quality, pixel-perfect, and responsive UI components across various screen sizes.",
+        "Integrated service booking flows, user profiles, and real-time status updates through RESTful API consumption."
+      ],
+      "links": [
+        "https://www.figma.com/design/qTS7f5nlvWEgFecdS0E2ZW/Home-Service-App?node-id=0-1&p=f"
+      ]
+    },
+    {
+      "company": "WingoLand",
+      "role": "Frontend Developer (Freelance)",
+      "dates": "Nov 2024 - Oct 2025",
+      "bullets": [
+        "Spearheaded the frontend development of a game-based learning web platform using Next.js and Tailwind CSS.",
+        "Built and published a cross-platform mobile application using React Native (Expo), deployed to Google Play and Apple App Store.",
+        "Implemented complex client-side integrations including Apple In-App Purchases, Tap payments, and Tabby split payments.",
+        "Managed static asset delivery and optimization via AWS S3 to ensure fast load times and a smooth user experience."
+      ],
+      "links": [
+        "https://wingoland.com",
+        "https://play.google.com/store/apps/details?id=com.wingoLand.wingoLand",
+        "https://apps.apple.com/sa/app/wingoland/id6744946462"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Trego eCommerce Platform",
+      "dates": "Sep 2025",
+      "bullets": [
+        "Engineered a modern, fully-featured eCommerce web application built with Next.js, TypeScript, shadcn, and lucide.",
+        "Developed a bilingual interface (Arabic and English) ensuring full RTL/LTR responsiveness across all devices.",
+        "Created an intuitive frontend architecture for product listings, multilingual search, smart shopping carts, and a comprehensive admin dashboard."
+      ],
+      "links": ["https://trego-commerce.vercel.app"]
+    },
+    {
+      "name": "QR Generator Authentication Mobile App",
+      "dates": "Oct 2025",
+      "bullets": [
+        "Developed a cross-platform mobile app using React Native and Expo for secure QR code generation and management.",
+        "Implemented strict client-side input validation using the Zod schema validation library.",
+        "Integrated real-time Socket.io connections for dynamic UI updates upon authentication state changes."
+      ],
+      "links": ["https://github.com/abdullah0saeed/qr-auth-mobile"]
+    },
+    {
+      "name": "Game-Based Learning Mobile App",
+      "dates": "May 2023",
+      "bullets": [
+        "Designed and built the user interface for a children's game-based learning app using React Native (Expo).",
+        "Created dynamic game views and an interactive level map populated by data fetched from backend APIs."
+      ],
+      "links": [
+        "https://drive.google.com/drive/folders/11vhDl-5g6oBPAVnGaHy9-9A0UBGikr4I"
+      ]
+    },
+    {
+      "name": "RentEase Web Interface",
+      "dates": "Feb 2025",
+      "bullets": [
+        "Built a responsive React interface for property listing and booking, optimized for seamless user navigation.",
+        "Integrated automated WhatsApp messaging triggers directly from the frontend UI."
+      ],
+      "links": ["https://rental-app-front-steel.vercel.app/"]
+    }
+  ],
+  "education": [
+    {
+      "school": "Information Technology Institute (ITI)",
+      "degree": "Intensive Training Program - MEARN Stack",
+      "dates": "July 2025 – Nov 2025",
+      "details": "Intensive hands-on training focusing on building full-stack applications using MongoDB, Express.js, React.js, Angular, and Node.js."
+    },
+    {
+      "school": "Zagazig University",
+      "degree": "Bachelor's in Computer and Systems Engineering",
+      "dates": "Jun 2018 \u2013 Jun 2023",
+      "details": "Grade: Very good. Graduation project: Game-based learning mobile app (Grade: Excellent)."
+    }
+  ],
+  "languages": ["Arabic (Native)", "English (Very good)"],
+  "soft_skills": [
+    "UI/UX Implementation",
+    "Cross-Browser Compatibility",
+    "Communication",
+    "Problem Solving"
+  ]
+}

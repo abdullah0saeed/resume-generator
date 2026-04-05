@@ -2,7 +2,9 @@ const fs = require("fs-extra");
 const path = require("path");
 const pdf = require("html-pdf-node");
 
-const DATA_FILE = path.resolve(__dirname, "data.json");
+// const DATA_FILE = path.resolve(__dirname, "data.json"); // FULL STACK
+// const DATA_FILE = path.resolve(__dirname, "frontendData.json"); // FRONTEND
+const DATA_FILE = path.resolve(__dirname, "backendData.json"); // BACKEND
 let OUTPUT_PDF;
 
 async function loadData() {
@@ -121,10 +123,10 @@ function buildHtml(data) {
   <section>
     <h2>Technical Skills</h2>
     <div><strong>Languages & Frameworks:</strong> ${data.skills.join(
-      ", "
+      ", ",
     )}</div>
     <div style="margin-top:5px"><strong>Tools:</strong> ${data.tools.join(
-      ", "
+      ", ",
     )}</div>
   </section>
 
@@ -139,8 +141,8 @@ function buildHtml(data) {
       <div class="entry">
         <div class="entry-header">
           <div class="entry-title">${exp.company} <span class="entry-role">- ${
-          exp.role
-        }</span></div>
+            exp.role
+          }</span></div>
           <div class="entry-date">${exp.dates}</div>
         </div>
         <ul>${exp.bullets.map((b) => `<li>${b}</li>`).join("")}</ul>
@@ -154,7 +156,7 @@ function buildHtml(data) {
             : ""
         }
       </div>
-    `
+    `,
       )
       .join("")}
   </section>
@@ -183,7 +185,7 @@ function buildHtml(data) {
             : ""
         }
       </div>
-    `
+    `,
       )
       .join("")}
   </section>
@@ -201,7 +203,7 @@ function buildHtml(data) {
         <div><strong>${ed.degree}</strong></div>
         <div>${ed.details}</div>
       </div>
-    `
+    `,
       )
       .join("")}
   </section>
@@ -210,7 +212,7 @@ function buildHtml(data) {
     <h2>Additional Information</h2>
     <div><strong>Languages:</strong> ${data.languages.join(", ")}</div>
     <div style="margin-top: 5px;"><strong>Soft Skills:</strong> ${data.soft_skills.join(
-      ", "
+      ", ",
     )}</div>
   </section>
 

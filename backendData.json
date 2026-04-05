@@ -39,14 +39,14 @@
   "experience": [
     {
       "company": "OrderKing Egypt",
-      "role": "Backend Engineer",
+      "role": "Full Stack Developer",
       "dates": "Nov 2025 - Present",
       "bullets": [
-        "Architected scalable RESTful APIs using Node.js, serving thousands of concurrent users.",
-        "Designed normalized database schemas in PostgreSQL and MySQL, optimizing complex queries for 40% faster response times.",
-        "Implemented a robust notification service using Firebase FCM and APNs, handling high-throughput delivery queues.",
-        "Integrated secure payment gateways (Stripe, Fawry) and SMS providers, ensuring PCI compliance and transactional integrity.",
-        "Built AI-driven backend features by integrating OpenAI API for automated content processing and user assistance."
+        "Architected and maintained scalable full-stack web applications using React.js, Tailwind CSS, and Node.js.",
+        "Designed and optimized relational database schemas in MySQL and PostgreSQL (via Supabase) using Drizzle ORM for high-performance data storage.",
+        "Integrated multi-provider payment systems (Stripe, Fawry) and SMS services, ensuring secure and reliable transaction processing.",
+        "Engineered a robust push notification infrastructure for Android (Firebase FCM) and iOS (APNs) to drive user engagement.",
+        "Implemented AI-powered features by integrating OpenAI API, enhancing application intelligence and automation capabilities."
       ],
       "links": []
     },
@@ -95,6 +95,12 @@
     }
   ],
   "education": [
+    {
+      "school": "Information Technology Institute (ITI)",
+      "degree": "Intensive Training Program - MEARN Stack",
+      "dates": "July 2025 – Nov 2025",
+      "details": "Intensive hands-on training focusing on building full-stack applications using MongoDB, Express.js, React.js, Angular, and Node.js."
+    },
     {
       "school": "Zagazig University",
       "degree": "Bachelor's in Computer and Systems Engineering",
