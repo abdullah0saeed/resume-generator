@@ -2,9 +2,9 @@ const fs = require("fs-extra");
 const path = require("path");
 const pdf = require("html-pdf-node");
 
-// const DATA_FILE = path.resolve(__dirname, "data.json"); // FULL STACK
+const DATA_FILE = path.resolve(__dirname, "data.json"); // FULL STACK
 // const DATA_FILE = path.resolve(__dirname, "frontendData.json"); // FRONTEND
-const DATA_FILE = path.resolve(__dirname, "backendData.json"); // BACKEND
+// const DATA_FILE = path.resolve(__dirname, "backendData.json"); // BACKEND
 let OUTPUT_PDF;
 
 async function loadData() {
@@ -133,28 +133,17 @@ function buildHtml(data) {
   ${
     data.experience && data.experience.length
       ? `
-  <section>
+   <section>
     <h2>Professional Experience</h2>
     ${data.experience
       .map(
         (exp) => `
       <div class="entry">
         <div class="entry-header">
-          <div class="entry-title">${exp.company} <span class="entry-role">- ${
-            exp.role
-          }</span></div>
+          <div class="entry-title">${exp.role} <span class="entry-role">- ${exp.company}</span></div>
           <div class="entry-date">${exp.dates}</div>
         </div>
-        <ul>${exp.bullets.map((b) => `<li>${b}</li>`).join("")}</ul>
-        ${
-          exp.links && exp.links.length
-            ? `
-          <div class="links"><strong>Links:</strong> ${exp.links
-            .map((l) => `<a href="${l}">${l}</a>`)
-            .join(" | ")}</div>
-        `
-            : ""
-        }
+        ${exp.brief ? `<p style="font-size: 10pt; margin-top: 4px; margin-bottom: 8px;">${exp.brief}</p>` : ""}
       </div>
     `,
       )

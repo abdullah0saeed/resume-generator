@@ -36,46 +36,71 @@
       "company": "OrderKing Egypt",
       "role": "Full Stack Developer",
       "dates": "Nov 2025 - Present",
-      "bullets": [
-        "Architected and maintained scalable full-stack web applications using React.js, Tailwind CSS, and Node.js.",
-        "Designed and optimized relational database schemas in MySQL and PostgreSQL (via Supabase) using Drizzle ORM for high-performance data storage.",
-        "Integrated multi-provider payment systems (Stripe, Fawry) and SMS services, ensuring secure and reliable transaction processing.",
-        "Engineered a robust push notification infrastructure for Android (Firebase FCM) and iOS (APNs) to drive user engagement.",
-        "Implemented AI-powered features by integrating OpenAI API, enhancing application intelligence and automation capabilities."
-      ],
-      "links": []
-    },
-    {
-      "company": "Home Service App",
-      "role": "Front End Developer (Freelance)",
-      "dates": "Nov 2025 - Dec 2025",
-      "bullets": [
-        "Developed the frontend for a home service booking mobile application using React Native (Expo) and Tailwind CSS.",
-        "Translated Figma designs into high-quality, pixel-perfect, and responsive UI components across various screen sizes.",
-        "Integrated service booking flows, user profiles, and real-time status updates through RESTful API consumption."
-      ],
-      "links": [
-        "https://www.figma.com/design/qTS7f5nlvWEgFecdS0E2ZW/Home-Service-App?node-id=0-1&p=f"
-      ]
+      "brief": "Building scalable, responsive React applications, implementing complex UI/UX designs, and integrating secure payment and notification APIs."
     },
     {
       "company": "WingoLand",
       "role": "Frontend Developer (Freelance)",
       "dates": "Nov 2024 - Oct 2025",
+      "brief": "Lead frontend developer for a cross-platform learning platform, building Next.js web portals and deploying React Native apps to mobile stores."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Loyalla - Multi-Tenant SaaS Platform | OrderKing Egypt",
+      "dates": "Jan 2026 - Apr 2026",
       "bullets": [
-        "Spearheaded the frontend development of a game-based learning web platform using Next.js and Tailwind CSS.",
-        "Built and published a cross-platform mobile application using React Native (Expo), deployed to Google Play and Apple App Store.",
-        "Implemented complex client-side integrations including Apple In-App Purchases, Tap payments, and Tabby split payments.",
-        "Managed static asset delivery and optimization via AWS S3 to ensure fast load times and a smooth user experience."
+        "Architected a scalable 4-tier multi-tenant SaaS infrastructure (Agencies > Tenants > Branches > Consumers) using Node.js, Express, and Drizzle ORM.",
+        "Engineered a resilient FinTech core integrating Stripe and Fawry, featuring automated subscription mirroring, multi-currency billing, and localized tax compliance (VAT).",
+        "Developed an automated PDF and QR generation pipeline using PDFKit for branded multi-currency invoicing and RKSV-compliant financial reporting.",
+        "Developed a distributed background task system using pg-boss to orchestrate high-volume asynchronous marketing campaigns and automated system maintenance.",
+        "Implemented an enterprise-grade security layer featuring Supabase Vault for secret management and a programmatically generated GDPR data portability engine.",
+        "Architected an interactive Developer Portal with automated API documentation and environment-aware code samples to streamline third-party POS integrations.",
+        "Developed an enterprise-grade administrative dashboard using React, TypeScript, and Tailwind CSS, maintaining a type-safe component library for high-scale multi-tenant management.",
+        "Built a global Internationalization (i18n) framework supporting LTR/RTL dashboard interfaces (EN, DE, TR, AR) with context-aware UI feedback loops.",
+        "Implemented a sophisticated geospatial layer using React-Leaflet, allowing admins to visualize branch distribution and perform precision location-picking via custom map interactions.",
+        "Engineered advanced analytics dashboards using Chart.js, featuring dynamic date-range filtering, localized number formatting (MENA/EU), and responsive time-series visualization."
+      ],
+      "links": []
+    },
+    {
+      "name": "Enterprise ERP & POS Platform | OrderKing Egypt",
+      "dates": "Jan 2026 - Present",
+      "bullets": [
+        "Architected a comprehensive B2B dashboard for internal agents and external business customers using React, TypeScript, and Tailwind CSS.",
+        "Developed a robust frontend for the PSL inventory module, featuring interactive stock history tracking and drag-and-drop warehouse management.",
+        "Implemented a multi-channel CRM and ticketing system supporting Classic/Emergency Support, RMAs, and real-time chat with branches.",
+        "Built a complete financial accounting UI handling fiscal periods, digital quotes, automated invoicing, and visual dashboard analytics.",
+        "Integrated secure, token-authenticated digital asset viewing and interactive digital e-signature capabilities (SignaturePad) for logistics sign-offs.",
+        "Configured secure authentication flows distinguishing between admin agents and external B2B customers, implementing strictly protected routing."
+      ],
+      "links": []
+    },
+    {
+      "name": "WingoLand - Game-Based Learning Platform | WingoLand",
+      "dates": "Nov 2024 - Oct 2025",
+      "bullets": [
+        "Built the main web application using Next.js and Tailwind CSS, optimizing for performance and responsive design.",
+        "Developed and published a cross-platform mobile application using React Native (Expo), successfully deploying to Google Play and the Apple App Store."
       ],
       "links": [
         "https://wingoland.com",
         "https://play.google.com/store/apps/details?id=com.wingoLand.wingoLand",
         "https://apps.apple.com/sa/app/wingoland/id6744946462"
       ]
-    }
-  ],
-  "projects": [
+    },
+    {
+      "name": "Home Service Booking App",
+      "dates": "Nov 2025 - Dec 2025",
+      "bullets": [
+        "Developed the frontend for a home service booking mobile application using React Native (Expo) and Tailwind CSS.",
+        "Translated complex Figma designs into high-quality, pixel-perfect, and responsive UI components.",
+        "Integrated service booking flows, user profiles, and real-time status updates via RESTful APIs."
+      ],
+      "links": [
+        "https://www.figma.com/design/qTS7f5nlvWEgFecdS0E2ZW/Home-Service-App?node-id=0-1&p=f"
+      ]
+    },
     {
       "name": "Trego eCommerce Platform",
       "dates": "Sep 2025",
@@ -121,7 +146,7 @@
     {
       "school": "Information Technology Institute (ITI)",
       "degree": "Intensive Training Program - MEARN Stack",
-      "dates": "July 2025 – Nov 2025",
+      "dates": "July 2025 \u2013 Nov 2025",
       "details": "Intensive hands-on training focusing on building full-stack applications using MongoDB, Express.js, React.js, Angular, and Node.js."
     },
     {

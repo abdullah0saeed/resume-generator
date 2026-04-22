@@ -41,31 +41,63 @@
       "company": "OrderKing Egypt",
       "role": "Full Stack Developer",
       "dates": "Nov 2025 - Present",
-      "bullets": [
-        "Architected and maintained scalable full-stack web applications using React.js, Tailwind CSS, and Node.js.",
-        "Designed and optimized relational database schemas in MySQL and PostgreSQL (via Supabase) using Drizzle ORM for high-performance data storage.",
-        "Integrated multi-provider payment systems (Stripe, Fawry) and SMS services, ensuring secure and reliable transaction processing.",
-        "Engineered a robust push notification infrastructure for Android (Firebase FCM) and iOS (APNs) to drive user engagement.",
-        "Implemented AI-powered features by integrating OpenAI API, enhancing application intelligence and automation capabilities."
-      ],
-      "links": []
+      "brief": "Architecting robust microservices, optimizing relational databases, and integrating complex third-party APIs (Stripe, OpenAI) for high-traffic platforms."
     },
     {
       "company": "WingoLand",
       "role": "Backend Developer (Freelance)",
       "dates": "Nov 2024 - Oct 2025",
-      "bullets": [
-        "Developed a monolithic Node.js backend to manage user progress, game levels, and real-time leaderboards.",
-        "Optimized MongoDB aggregations to handle complex data retrieval for game analytics.",
-        "Implemented secure file storage for game assets using AWS S3 and presigned URLs.",
-        "Integrated Apple In-App Purchases and Tap Payments for secure subscription management."
-      ],
-      "links": ["https://wingoland.com"]
+      "brief": "Engineered the core Node.js/MongoDB backend infrastructure, managing game state data, AWS S3 asset delivery, and payment gateway integrations."
     }
   ],
   "projects": [
     {
-      "name": "Kafka Event Handler – Microservice",
+      "name": "Loyalla - Multi-Tenant SaaS Platform | OrderKing Egypt",
+      "dates": "Jan 2026 - Apr 2026",
+      "bullets": [
+        "Architected a scalable 4-tier multi-tenant SaaS infrastructure (Agencies > Tenants > Branches > Consumers) using Node.js, Express, and Drizzle ORM.",
+        "Engineered a resilient FinTech core integrating Stripe and Fawry, featuring automated subscription mirroring, multi-currency billing, and localized tax compliance (VAT).",
+        "Developed an automated PDF and QR generation pipeline using PDFKit for branded multi-currency invoicing and RKSV-compliant financial reporting.",
+        "Developed a distributed background task system using pg-boss to orchestrate high-volume asynchronous marketing campaigns and automated system maintenance.",
+        "Implemented an enterprise-grade security layer featuring Supabase Vault for secret management and a programmatically generated GDPR data portability engine.",
+        "Architected an interactive Developer Portal with automated API documentation and environment-aware code samples to streamline third-party POS integrations.",
+        "Developed an enterprise-grade administrative dashboard using React, TypeScript, and Tailwind CSS, maintaining a type-safe component library for high-scale multi-tenant management.",
+        "Built a global Internationalization (i18n) framework supporting LTR/RTL dashboard interfaces (EN, DE, TR, AR) with context-aware UI feedback loops.",
+        "Implemented a sophisticated geospatial layer using React-Leaflet, allowing admins to visualize branch distribution and perform precision location-picking via custom map interactions.",
+        "Engineered advanced analytics dashboards using Chart.js, featuring dynamic date-range filtering, localized number formatting (MENA/EU), and responsive time-series visualization."
+      ],
+      "links": []
+    },
+    {
+      "name": "Enterprise ERP & POS Platform | OrderKing Egypt",
+      "dates": "Jan 2026 - Present",
+      "bullets": [
+        "Architected a scalable Node.js and Express REST API powering a comprehensive multi-country ERP and POS platform.",
+        "Designed and optimized a complex MySQL database schema to handle granular inventory tracking, dynamic currency mapping, and transaction histories.",
+        "Engineered an automated Product Stock Location (PSL) engine with CRON jobs that evaluate real-time stock against minimum thresholds, automatically dispatching WebSocket alerts for reordering.",
+        "Implemented multi-platform Push Notifications using Firebase Admin (FCM) for Android and direct APNs for iOS to alert field agents of emergency support tickets and task updates.",
+        "Developed automated PDF and QR code generation using 'pdfkit' and 'qrcode' to create scannable labels for physical warehouse management and RKSV compliance.",
+        "Built the backend infrastructure for 'QuickPlate' self-ordering tablets, including secure device registration, heartbeat monitoring, and subscription lifecycles.",
+        "Created robust file upload and digital asset management systems using 'multer' with strict validation and isolated storage rules."
+      ],
+      "links": []
+    },
+    {
+      "name": "WingoLand - Game-Based Learning Platform | WingoLand",
+      "dates": "Nov 2024 - Oct 2025",
+      "bullets": [
+        "Engineered the backend architecture using Node.js, Express, and MongoDB to manage dynamic game data and user state.",
+        "Implemented complex monetization flows including Apple In-App Purchases, Tap payments gateway, and Tabby split payments.",
+        "Managed static asset delivery and optimization via AWS S3 to ensure fast load times across global regions."
+      ],
+      "links": [
+        "https://wingoland.com",
+        "https://play.google.com/store/apps/details?id=com.wingoLand.wingoLand",
+        "https://apps.apple.com/sa/app/wingoland/id6744946462"
+      ]
+    },
+    {
+      "name": "Kafka Event Handler \u2013 Microservice",
       "dates": "April 2025",
       "bullets": [
         "Built a fault-tolerant event streaming service using Apache Kafka and Node.js.",
@@ -98,13 +130,13 @@
     {
       "school": "Information Technology Institute (ITI)",
       "degree": "Intensive Training Program - MEARN Stack",
-      "dates": "July 2025 – Nov 2025",
+      "dates": "July 2025 \u2013 Nov 2025",
       "details": "Intensive hands-on training focusing on building full-stack applications using MongoDB, Express.js, React.js, Angular, and Node.js."
     },
     {
       "school": "Zagazig University",
       "degree": "Bachelor's in Computer and Systems Engineering",
-      "dates": "Jun 2018 – Jun 2023",
+      "dates": "Jun 2018 \u2013 Jun 2023",
       "details": "Grade: Very good. Graduation project: Backend for Game-based learning platform."
     }
   ],

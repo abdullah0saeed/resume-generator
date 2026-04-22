@@ -54,49 +54,76 @@
       "company": "OrderKing Egypt",
       "role": "Full Stack Developer",
       "dates": "Nov 2025 - Present",
-      "bullets": [
-        "Architected and maintained scalable full-stack web applications using React.js, Tailwind CSS, and Node.js.",
-        "Designed and optimized relational database schemas in MySQL and PostgreSQL (via Supabase) using Drizzle ORM for high-performance data storage.",
-        "Integrated multi-provider payment systems (Stripe, Fawry) and SMS services, ensuring secure and reliable transaction processing.",
-        "Engineered a robust push notification infrastructure for Android (Firebase FCM) and iOS (APNs) to drive user engagement.",
-        "Implemented AI-powered features by integrating OpenAI API, enhancing application intelligence and automation capabilities."
-      ],
-      "links": []
-    },
-    {
-      "company": "Home Service App",
-      "role": "Front End Developer (Freelance)",
-      "dates": "Nov 2025 - Dec 2025",
-      "bullets": [
-        "Developed the frontend for a home service booking mobile application using React Native (Expo) and Tailwind CSS.",
-        "Translated Figma designs into high-quality, pixel-perfect, and responsive UI components.",
-        "Integrated service booking flows, user profiles, and real-time status updates."
-      ],
-      "links": [
-        "https://www.figma.com/design/qTS7f5nlvWEgFecdS0E2ZW/Home-Service-App?node-id=0-1&p=f"
-      ]
+      "brief": "Developing scalable full-stack web applications, designing optimized database schemas, and integrating multi-provider payment and notification systems."
     },
     {
       "company": "WingoLand",
       "role": "Full Stack Developer (Freelance)",
       "dates": "Nov 2024 - Oct 2025",
+      "brief": "Full-stack development of a game-based learning platform, handling Node.js backends, React Native mobile apps, and Next.js web interfaces."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Loyalla - Multi-Tenant SaaS Platform | OrderKing Egypt",
+      "dates": "Jan 2026 - Apr 2026",
       "bullets": [
-        "Full-stack, game-based learning platform for teaching English through interactive levels.",
-        "Web app built with Next.js and Tailwind CSS.",
-        "Cross platform Mobile app built with React Native (Expo).",
-        "Backend: Node.js, Express, MongoDB; AWS S3 for assets.",
-        "Deployed on Vercel, Render, and both Android and iOS app stores.",
-        "Tap payments gateway, and Tabby for split payments integration.",
-        "Apple In-App Purchases integration."
+        "Architected a scalable 4-tier multi-tenant SaaS infrastructure (Agencies > Tenants > Branches > Consumers) using Node.js, Express, and Drizzle ORM.",
+        "Engineered a resilient FinTech core integrating Stripe and Fawry, featuring automated subscription mirroring, multi-currency billing, and localized tax compliance (VAT).",
+        "Developed an automated PDF and QR generation pipeline using PDFKit for branded multi-currency invoicing and RKSV-compliant financial reporting.",
+        "Developed a distributed background task system using pg-boss to orchestrate high-volume asynchronous marketing campaigns and automated system maintenance.",
+        "Implemented an enterprise-grade security layer featuring Supabase Vault for secret management and a programmatically generated GDPR data portability engine.",
+        "Architected an interactive Developer Portal with automated API documentation and environment-aware code samples to streamline third-party POS integrations.",
+        "Developed an enterprise-grade administrative dashboard using React, TypeScript, and Tailwind CSS, maintaining a type-safe component library for high-scale multi-tenant management.",
+        "Built a global Internationalization (i18n) framework supporting LTR/RTL dashboard interfaces (EN, DE, TR, AR) with context-aware UI feedback loops.",
+        "Implemented a sophisticated geospatial layer using React-Leaflet, allowing admins to visualize branch distribution and perform precision location-picking via custom map interactions.",
+        "Engineered advanced analytics dashboards using Chart.js, featuring dynamic date-range filtering, localized number formatting (MENA/EU), and responsive time-series visualization."
+      ],
+      "links": []
+    },
+    {
+      "name": "Enterprise ERP & POS Platform | OrderKing Egypt",
+      "dates": "Nov 2025 - Jan 2026",
+      "bullets": [
+        "Architected a full-stack B2B ERP and POS platform using React, TypeScript, Node.js, Express, and MySQL.",
+        "Engineered an automated Product Stock Location (PSL) logistics engine, tracking inventory across warehouses and automatically triggering WebSocket alerts when stock falls below minimum thresholds.",
+        "Developed automated PDF and QR code generation pipelines for printable warehouse shelf labels and RKSV-compliant invoicing.",
+        "Implemented a multi-channel CRM and ticketing system with real-time chat, RMA handling, and multi-platform Push Notifications (FCM/APNs).",
+        "Built the backend and API infrastructure for 'QuickPlate' self-ordering tablets, managing device heartbeats and SaaS subscriptions.",
+        "Created an advanced accounting suite handling fiscal periods, dynamic multi-currency mappings (EUR, EGP, TRY), and automated dunning.",
+        "Integrated secure, token-authenticated digital asset management and digital e-signature capabilities for contract and delivery sign-offs."
+      ],
+      "links": []
+    },
+    {
+      "name": "WingoLand - Game-Based Learning Platform | WingoLand",
+      "dates": "Nov 2024 - Oct 2025",
+      "bullets": [
+        "Spearheaded the full-stack development of a game-based learning platform for teaching English, featuring interactive levels and progress tracking.",
+        "Built the main web application using Next.js and Tailwind CSS, optimizing for performance and responsive design.",
+        "Developed and published a cross-platform mobile application using React Native (Expo), successfully deploying to Google Play and the Apple App Store.",
+        "Engineered the backend architecture using Node.js, Express, and MongoDB to manage dynamic game data and user state.",
+        "Implemented complex monetization flows including Apple In-App Purchases, Tap payments gateway, and Tabby split payments.",
+        "Managed static asset delivery and optimization via AWS S3 to ensure fast load times across global regions."
       ],
       "links": [
         "https://wingoland.com",
         "https://play.google.com/store/apps/details?id=com.wingoLand.wingoLand",
         "https://apps.apple.com/sa/app/wingoland/id6744946462"
       ]
-    }
-  ],
-  "projects": [
+    },
+    {
+      "name": "Home Service Booking App",
+      "dates": "Nov 2025 - Dec 2025",
+      "bullets": [
+        "Developed the frontend for a home service booking mobile application using React Native (Expo) and Tailwind CSS.",
+        "Translated complex Figma designs into high-quality, pixel-perfect, and responsive UI components.",
+        "Integrated service booking flows, user profiles, and real-time status updates via RESTful APIs."
+      ],
+      "links": [
+        "https://www.figma.com/design/qTS7f5nlvWEgFecdS0E2ZW/Home-Service-App?node-id=0-1&p=f"
+      ]
+    },
     {
       "name": "QR Generator Authentication System",
       "dates": "Oct 2025",
@@ -128,7 +155,7 @@
       "links": ["https://trego-commerce.vercel.app"]
     },
     {
-      "name": "Kafka Event Handler – Node.js Microservice",
+      "name": "Kafka Event Handler \u2013 Node.js Microservice",
       "dates": "April 2025",
       "bullets": [
         "Microservice handling real-time event streaming with Apache Kafka.",
@@ -195,13 +222,13 @@
     {
       "school": "Information Technology Institute (ITI)",
       "degree": "Intensive Training Program - MEARN Stack",
-      "dates": "July 2025 – Nov 2025",
+      "dates": "July 2025 \u2013 Nov 2025",
       "details": "Intensive hands-on training focusing on building full-stack applications using MongoDB, Express.js, React.js, Angular, and Node.js."
     },
     {
       "school": "Zagazig University",
       "degree": "Bachelor's in Computer and Systems Engineering",
-      "dates": "Jun 2018 – Jun 2023",
+      "dates": "Jun 2018 \u2013 Jun 2023",
       "details": "Grade: Very good. Graduation project: Game-based learning mobile app (Grade: Excellent)."
     }
   ],
