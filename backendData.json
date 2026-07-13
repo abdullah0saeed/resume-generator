@@ -9,7 +9,7 @@
     "github": "https://github.com/abdullah0saeed?tab=repositories",
     "website": ""
   },
-  "summary": "Backend Engineer with extensive experience designing scalable microservices and RESTful APIs using Node.js, Express, and TypeScript. Proficient in database optimization with PostgreSQL, MySQL, and MongoDB. Adept at integrating complex third-party services (Stripe, Fawry, OpenAI) and deploying containerized applications using Docker and AWS.",
+  "summary": "Backend Engineer with extensive experience designing scalable microservices and RESTful APIs using Node.js, Express, NestJS, and TypeScript. Proficient in database optimization with PostgreSQL, MySQL, and MongoDB. Adept at integrating complex third-party services (Stripe, Fawry, OpenAI) and deploying containerized applications using Docker and AWS.",
   "military_status": "Completed",
   "skills": [
     "Node.js",
