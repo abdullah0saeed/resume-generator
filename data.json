@@ -51,9 +51,15 @@
   ],
   "experience": [
     {
+      "company": "Olimi AI",
+      "role": "Backend Engineer",
+      "dates": "May 2026 - Jul 2026",
+      "brief": "Developed backend architecture for a voice AI platform, integrating Soniox STT, Dograh conversational workflows, and Anthropic Batch APIs for automated call summarization."
+    },
+    {
       "company": "OrderKing Egypt",
       "role": "Full Stack Developer",
-      "dates": "Nov 2025 - Present",
+      "dates": "Nov 2025 - May 2026",
       "brief": "Developing scalable full-stack web applications, designing optimized database schemas, and integrating multi-provider payment and notification systems."
     },
     {
@@ -64,6 +70,17 @@
     }
   ],
   "projects": [
+    {
+      "name": "Voice AI Agent Platform | Olimi AI",
+      "dates": "May 2026 - Jul 2026",
+      "bullets": [
+        "Integrated advanced Text-to-Speech (TTS) and Speech-to-Text (STT) servers, implementing the Soniox STT API to handle low-latency transcription for voice agents.",
+        "Engineered an automated data pipeline using the Anthropic Batch API to process and generate accurate summaries from large volumes of call transcriptions.",
+        "Configured and deployed Dograh, an open-source voice AI conversation builder, to manage telephony integrations and orchestrate complex AI caller workflows.",
+        "Developed and maintained core backend services, implementing robust CRUD operations for user configuration, call routing, and system data management."
+      ],
+      "links": []
+    },
     {
       "name": "Loyalla - Multi-Tenant SaaS Platform | OrderKing Egypt",
       "dates": "Jan 2026 - Apr 2026",
