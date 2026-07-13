@@ -2,15 +2,14 @@ const fs = require("fs-extra");
 const path = require("path");
 const pdf = require("html-pdf-node");
 
-const DATA_FILE = path.resolve(__dirname, "data.json"); // FULL STACK
-// const DATA_FILE = path.resolve(__dirname, "frontendData.json"); // FRONTEND
-// const DATA_FILE = path.resolve(__dirname, "backendData.json"); // BACKEND
+const profileArg = process.argv[2] || "data";
+const DATA_FILE = path.resolve(__dirname, `${profileArg}.json`);
 let OUTPUT_PDF;
 
 async function loadData() {
   const raw = await fs.readFile(DATA_FILE, "utf8");
   const data = JSON.parse(raw);
-  OUTPUT_PDF = path.resolve(__dirname, `${data.name}.pdf`);
+  OUTPUT_PDF = path.resolve(__dirname, `${data.name} - ${data.title}.pdf`);
   return data;
 }
 

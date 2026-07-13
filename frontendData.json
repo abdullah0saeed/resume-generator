@@ -50,16 +50,11 @@
       "name": "Loyalla - Multi-Tenant SaaS Platform | OrderKing Egypt",
       "dates": "Jan 2026 - Apr 2026",
       "bullets": [
-        "Architected a scalable 4-tier multi-tenant SaaS infrastructure (Agencies > Tenants > Branches > Consumers) using Node.js, Express, and Drizzle ORM.",
-        "Engineered a resilient FinTech core integrating Stripe and Fawry, featuring automated subscription mirroring, multi-currency billing, and localized tax compliance (VAT).",
-        "Developed an automated PDF and QR generation pipeline using PDFKit for branded multi-currency invoicing and RKSV-compliant financial reporting.",
-        "Developed a distributed background task system using pg-boss to orchestrate high-volume asynchronous marketing campaigns and automated system maintenance.",
-        "Implemented an enterprise-grade security layer featuring Supabase Vault for secret management and a programmatically generated GDPR data portability engine.",
-        "Architected an interactive Developer Portal with automated API documentation and environment-aware code samples to streamline third-party POS integrations.",
-        "Developed an enterprise-grade administrative dashboard using React, TypeScript, and Tailwind CSS, maintaining a type-safe component library for high-scale multi-tenant management.",
-        "Built a global Internationalization (i18n) framework supporting LTR/RTL dashboard interfaces (EN, DE, TR, AR) with context-aware UI feedback loops.",
-        "Implemented a sophisticated geospatial layer using React-Leaflet, allowing admins to visualize branch distribution and perform precision location-picking via custom map interactions.",
-        "Engineered advanced analytics dashboards using Chart.js, featuring dynamic date-range filtering, localized number formatting (MENA/EU), and responsive time-series visualization."
+        "Architected a scalable 4-tier multi-tenant SaaS architecture (Agencies > Tenants > Branches > Consumers) using Node.js, Express, and Drizzle ORM.",
+        "Engineered a resilient billing engine integrating Stripe and Fawry for automated subscription mirroring, multi-currency billing, localized tax compliance (VAT), and automated PDF/QR invoicing.",
+        "Orchestrated asynchronous marketing campaigns and system maintenance using a distributed pg-boss task system, and implemented security via Supabase Vault and a GDPR data portability engine.",
+        "Built an administrative dashboard using React, TypeScript, and Tailwind CSS with full internationalization (LTR/RTL) and advanced analytics via Chart.js and React-Leaflet.",
+        "Designed an interactive developer portal featuring automated API documentation and environment-aware code samples for third-party POS integrations."
       ],
       "links": []
     },
@@ -67,12 +62,11 @@
       "name": "Enterprise ERP & POS Platform | OrderKing Egypt",
       "dates": "Jan 2026 - Present",
       "bullets": [
-        "Architected a comprehensive B2B dashboard for internal agents and external business customers using React, TypeScript, and Tailwind CSS.",
-        "Developed a robust frontend for the PSL inventory module, featuring interactive stock history tracking and drag-and-drop warehouse management.",
-        "Implemented a multi-channel CRM and ticketing system supporting Classic/Emergency Support, RMAs, and real-time chat with branches.",
-        "Built a complete financial accounting UI handling fiscal periods, digital quotes, automated invoicing, and visual dashboard analytics.",
-        "Integrated secure, token-authenticated digital asset viewing and interactive digital e-signature capabilities (SignaturePad) for logistics sign-offs.",
-        "Configured secure authentication flows distinguishing between admin agents and external B2B customers, implementing strictly protected routing."
+        "Designed and optimized a cross-country B2B ERP and POS platform powered by Node.js, Express, and MySQL, featuring a proprietary Product Stock Location (PSL) logistics engine using CRON jobs and WebSockets.",
+        "Automated physical warehouse workflows with generated scannable asset labels, and developed the secure infrastructure powering 'QuickPlate' self-ordering tablets including SaaS subscriptions and heartbeat monitoring.",
+        "Engineered multi-channel CRM ticketing with real-time chat and RMA handling, and pushed emergency support tickets to field agents via direct APNs and Firebase Admin FCM.",
+        "Implemented a comprehensive financial suite tracking fiscal periods and multi-currency mappings, alongside token-authenticated digital asset viewing and e-signature capabilities.",
+        "Configured robust authentication layers with strictly protected routing to separate user journeys for internal admin agents and external B2B clients."
       ],
       "links": []
     },

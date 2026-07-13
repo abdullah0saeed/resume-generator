@@ -4,7 +4,9 @@
   "description": "Generate ATS-friendly resume PDF from JSON",
   "main": "generate.js",
   "scripts": {
-    "generate": "node generate.js"
+    "g:full": "node generate.js data",
+    "g:front": "node generate.js frontendData",
+    "g:back": "node generate.js backendData"
   },
   "dependencies": {
     "fs-extra": "^11.1.1",
