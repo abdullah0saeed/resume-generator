@@ -54,7 +54,7 @@
   "projects": [
     {
       "name": "Voice AI Agent Platform | Olimi AI",
-      "dates": "May 2026 - Jul 2026",
+      "dates": "May 2026 - Present",
       "bullets": [
         "Integrated advanced Text-to-Speech (TTS) and Speech-to-Text (STT) servers, implementing the Soniox STT API to handle low-latency transcription for voice agents.",
         "Engineered an automated data pipeline using the Anthropic Batch API to process and generate accurate summaries from large volumes of call transcriptions.",
